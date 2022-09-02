@@ -4,6 +4,9 @@ import numpy as np
 import random
 import string
 
+# https://python.gotrained.com/chatbot-development-python-nltk/
+greeting_input_texts = ("hey", "heys", "hello", "morning", "evening", "greetings",)
+greeting_reply_texts = ["hey", "hey hows you?", "*nod", "hello there", "ello", "Welcome"]
 
 continue_discussion=True
 print("Hello, I am a chatbot, I will answer your queries regarding global warming:")
