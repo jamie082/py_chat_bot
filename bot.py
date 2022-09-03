@@ -1,18 +1,23 @@
-
+import pdb
 import nltk
 # import numpy as np
 import random
 import string
 
+name = "Funny Bot 101"
+
+small_talk_responses = {
+        "What's your name?": "Your name is {user_input}",
+        }
+
+small_talk = small_talk_responses.values()
+small_talk = [str (item) for item in small_talk]
+
 # https://python.gotrained.com/chatbot-development-python-nltk/
 greeting_input_texts = ("hey", "heys", "hello", "morning", "evening", "greetings", "question")
-greeting_reply_texts = ["hey", "hey hows you?", "*nod", "hello there", "ello", "Welcome", "what is the answer?"]
+greeting_reply_texts = ["heyz", "hey hows you?", "*nod", "hello there", "ello", "Welcome", "what is the answer?"]
 
-stored_value = ("what's your name")
-reply_stored_value = ["They call me {0}".format(user_input),
-
-def reply_greeting(text): # loop through list of words
-
+def reply_greeting(text):
     for word in text.split():
         if word.lower() in greeting_input_texts:
             return random.choice(greeting_reply_texts)
