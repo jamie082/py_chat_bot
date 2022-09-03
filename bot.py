@@ -8,6 +8,12 @@ import string
 greeting_input_texts = ("hey", "heys", "hello", "morning", "evening", "greetings",)
 greeting_reply_texts = ["hey", "hey hows you?", "*nod", "hello there", "ello", "Welcome"]
 
+def reply_greeting(text):
+
+    for word in text.split():
+        if word.lower() in greeting_input_texts:
+            return random.choice(greeting_reply_texts)
+
 continue_discussion=True
 print("Hello, I am a chatbot, I will answer your queries regarding global warming:")
 while (continue_discussion==True):
