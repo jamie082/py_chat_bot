@@ -8,10 +8,8 @@ import string
 greeting_input_texts = ("hey", "heys", "hello", "morning", "evening", "greetings", "question")
 greeting_reply_texts = ["hey", "hey hows you?", "*nod", "hello there", "ello", "Welcome", "what is the answer?"]
 
-responses = {
-        "what's your name?": [
-        "They call me {0}".format(user_name),
-        "I usually go by {0}".format(user_name) ],
+stored_value = ("what's your name")
+reply_stored_value = ["They call me {0}".format(user_input),
 
 def reply_greeting(text): # loop through list of words
 
