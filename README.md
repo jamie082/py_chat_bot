@@ -4,4 +4,9 @@ a chatbot is an artificial intelligence-powered piece of software in a device (S
 Machine Learning is a field of inquiry devoted tounderstanding and building methods that 'learn'
 
 Chatbots are conversational agents that can talk with the user on general topics as well as for providing specialized services.
+
+<p>small talk block</p>
+<p>Greeting block</p>
+<p>One of the questions to ask the bot</p>
+Hello my name is Jamie. What is your name<br />
 # py_chat_bot

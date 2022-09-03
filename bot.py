@@ -5,10 +5,10 @@ import random
 import string
 
 # https://python.gotrained.com/chatbot-development-python-nltk/
-greeting_input_texts = ("hey", "heys", "hello", "morning", "evening", "greetings",)
-greeting_reply_texts = ["hey", "hey hows you?", "*nod", "hello there", "ello", "Welcome"]
+greeting_input_texts = ("hey", "heys", "hello", "morning", "evening", "greetings", "question")
+greeting_reply_texts = ["hey", "hey hows you?", "*nod", "hello there", "ello", "Welcome", "what is the answer?"]
 
-def reply_greeting(text):
+def reply_greeting(text): # loop through list of words
 
     for word in text.split():
         if word.lower() in greeting_input_texts:
@@ -19,7 +19,7 @@ print("Hello, I am a chatbot, I will answer your queries regarding global warmin
 while (continue_discussion==True):
     user_input = input()
     user_input = user_input.lower()
-    if(user_input != 'bye'):
+    if(user_input != 'bye'): # string to quit program
         if(user_input == 'thanks' or user_input == 'thank you very much' or user_input == 'thank'):
             continue_discussion=False
             print("Chatbot: Most welcome")
@@ -32,5 +32,5 @@ while (continue_discussion==True):
                 sentence_list.remove(user_input)
     else:
         continue_discussion=False
-        print("Chatbot: Take ccare, bye...")
+        print("Chatbot: Take care, bye...")
         
