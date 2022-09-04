@@ -41,7 +41,7 @@ while (continue_discussion==True):
                 small_talk_function()
             else:
                 print("Chatbot: ", end="")
-                print(give_reply(user_input))
+                print(reply_greeting(user_input))
                 sentence_list.remove(user_input)
     else:
         continue_discussion=False
