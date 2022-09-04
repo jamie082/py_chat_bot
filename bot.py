@@ -4,13 +4,11 @@ import nltk
 import random
 import string
 
-name = "Funny Bot 101"
-
 small_talk_responses = {
         "What's your name?": "Your name is {user_input}",
         }
 
-small_talk = small_talk_responses.values()
+small_talk = small_talk_responses.values() # walk the value
 small_talk = [str (item) for item in small_talk]
 
 # https://python.gotrained.com/chatbot-development-python-nltk/
@@ -43,4 +41,3 @@ while (continue_discussion==True):
     else:
         continue_discussion=False
         print("Chatbot: Take care, bye...")
-        
