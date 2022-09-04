@@ -17,7 +17,7 @@ greeting_reply_texts = ["heyz", "hey hows you?", "*nod", "hello there", "ello", 
 
 def reply_greeting(text):
     for word in text.split():
-        if word.lower() in greeting_input_texts:
+        if word.lower() in greeting_input_texts and small_talk:
             return random.choice(greeting_reply_texts)
 
 continue_discussion=True
