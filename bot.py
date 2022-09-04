@@ -5,7 +5,7 @@ import random
 import string
 
 small_talk_responses = {
-        "What's your name?": "Your name is {user_input}",
+        "What's your name?": "Your name is {input}",
         }
 
 small_talk = small_talk_responses.values() # walk the value
