@@ -5,8 +5,10 @@ import random
 import string
 
 def small_talk_function():
+    print("You entered the function Enter function")
+
 small_talk_responses = {
-        "What's your name?": "Your name is {input}",
+        "What's your name?": "Hi there {input}",
         }
 
 small_talk = small_talk_responses.values() # walk the value
@@ -35,7 +37,7 @@ while (continue_discussion==True):
         else:
             if(reply_greeting(user_input) != None):
                 print("Chatbot: "+reply_greeting(user_input))
-            elif (reply_greeting(input) == jamie)
+            elif (reply_greeting(user_input) == "jamie"): # if user typed jamie
                 small_talk_function()
             else:
                 print("Chatbot: ", end="")
