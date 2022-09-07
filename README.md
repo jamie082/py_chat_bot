@@ -10,3 +10,8 @@ Chatbots are conversational agents that can talk with the user on general topics
 <p>One of the questions to ask the bot</p>
 Hello my name is Jamie. What is your name<br />
 # py_chat_bot
+
+##
+Implementation
+1. The user enters text
+2. The bot responds
