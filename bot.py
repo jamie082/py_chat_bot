@@ -14,6 +14,18 @@ small_talk_responses = {
 small_talk = small_talk_responses.values() # walk the value
 small_talk = [str (item) for item in small_talk]
 
+def give_reply(user_input):
+    chatbot_response=''
+    
+    similar_vectors = similarity_values.flatten()
+    matched_vector = similar_vector[-2]
+    if(matched_vector == 0):
+        chatbot_response=chatbot_response+"I am sorry! I don't understand you"
+        return chatbot_response
+    else:
+        chatbot_response = chatbot_response +sentence_list[similar_sentence_number]
+        return chatbot_response
+
 # https://python.gotrained.com/chatbot-development-python-nltk/
 greeting_input_texts = ("hey", "heys", "hello", "morning", "evening", "greetings", "question")
 greeting_reply_texts = ["heyz", "hey hows you?", "*nod", "hello there", "ello", "Welcome", "what is the answer?"]
@@ -41,7 +53,7 @@ while (continue_discussion==True):
                 small_talk_function()
             else:
                 print("Chatbot: ", end="")
-                print(reply_greeting(user_input))
+                print(give_reply(user_input))
                 sentence_list.remove(user_input)
     else:
         continue_discussion=False
